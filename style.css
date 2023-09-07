@@ -1,0 +1,181 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #edefee;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  margin: 3rem 5%;
+}
+
+h1 {
+  font-size: 3rem;
+}
+
+h2 {
+  font-size: 2rem;
+}
+
+header > img {
+  display: block;
+  margin: 0 auto;
+  width: 25vh;
+}
+
+nav {
+  margin: 1rem 0;
+  background-color: #d45942;
+  border: 2px solid #d45942;
+}
+
+nav ul {
+  list-style: none;
+  text-align: center;
+  display: flex;
+}
+
+nav li {
+  display: inline-block;
+  flex: 1;
+  transition: background-color 0.3s;
+}
+
+nav li:hover {
+  background-color: #7f3527;
+}
+
+nav > ul > li > a {
+  text-decoration: none;
+  color: #f4e4d4;
+  padding: 2vh 1rem;
+  display: block;
+}
+
+section {
+  display: flex;
+  margin: 1rem 0;
+}
+
+main > :first-child {
+  background-image: url("img/hair-day-salon.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  color: #d45941;
+  min-height: 300px;
+  text-align: center;
+}
+
+main > :first-child > article > div {
+  padding: 2rem;
+  background-color: rgba(255, 255, 255, 0.7);
+}
+
+main > :first-child > article {
+  margin: 3rem 5%;
+  display: flex;
+  flex-flow: column;
+  justify-content: space-evenly;
+}
+
+main > :first-child > h1 {
+  flex: 1;
+}
+
+main > :first-child > p {
+  flex: 1;
+}
+
+main > section:nth-child(2) {
+  display: flex;
+  gap: 20px;
+}
+
+article {
+  flex: 1;
+}
+
+footer {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+footer > div:nth-child(2) {
+  text-align: end;
+}
+
+footer div {
+  flex: 1;
+}
+
+footer > div > img {
+  width: 20vh;
+}
+
+.active {
+  background-color: #edefee;
+  color: #d45941;
+}
+
+.card-link {
+  text-decoration: none;
+  color: inherit;
+}
+
+.card {
+  width: 300px;
+  border: 1px solid #ead0c3;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  margin: 20px auto;
+  background-color: #f4e3d4;
+  color: #d4563e;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+
+.card-title {
+  padding: 10px;
+  overflow: hidden;
+}
+
+.card img {
+  width: 100%;
+  height: 200px;
+  border-radius: 4px;
+  object-fit: cover;
+}
+
+.card-text {
+  padding: 10px;
+  flex: 1;
+  overflow: hidden;
+  color: black;
+}
+
+@media (max-width: 768px) {
+  main > section:nth-child(2) {
+    display: block;
+  }
+
+  main > section:nth-child(2) article:nth-child(2) > div {
+    padding: 1rem;
+  }
+
+  main > section:nth-child(2) article:nth-child(2) h2 {
+    font-size: 1.5rem;
+  }
+
+  main > section:nth-child(2) article:nth-child(2) p {
+    font-size: 1rem;
+  }
+}
